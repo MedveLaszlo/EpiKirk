@@ -1,0 +1,7 @@
+body {
+    margin: 0;
+	background: #c9c9c9;
+	background: linear-gradient(45deg,rgba(201, 201, 201, 1) 0%, rgba(209, 222, 232, 1) 50%, rgba(160, 196, 222, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

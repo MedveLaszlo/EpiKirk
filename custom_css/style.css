@@ -1,0 +1,145 @@
+* {
+ //   outline: 1px solid red;
+}
+/**/
+
+body {
+	font-family: "Google Sans Flex", sans-serif;
+	/*padding-top: 2.3em;*/
+}
+
+/* Inkscape SVG Logó méretezése*/
+.logo-svg {
+	width: 2em;
+	height: 2em;
+}
+
+/* Fejlécel kapcsolatos */
+nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+.fejlec {
+	background-color: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+/**/
+
+/* Aloldalakkal kapcsolatos */
+.hero-img {
+
+}
+
+@keyframes megjelen_kep {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes megjelen_szoveg {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.megjelen_kep {
+	width: 100%;
+	max-width: 544px;
+	height: auto;
+    max-height: 390vh;
+    object-fit: contain;
+	display: block;
+	margin-inline: auto;
+	transform: translateX(-2vh);
+	margin-top: clamp(2vh, auto);
+    opacity: 0;
+    transform: translateX(-80px);
+    animation: megjelen_kep 1s ease-out forwards;
+}
+
+.eltolo {
+	padding-bottom: 20vh;
+}
+
+.elvalaszto {
+	margin-top: 10vh;
+}
+
+.termek_szoveg {
+	float: right;
+	margin-right: 100px;
+}
+
+.termek_szoveg p,
+.termek_szoveg h1{
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: megjelen_szoveg 1s ease-out forwards;
+}
+/**/
+
+/* A fő szekcióval és termékmegjelenítéssel kapcsolatos dolgok */
+.epibook_ht {
+	background: #c9c9c9;
+	background: linear-gradient(45deg,rgba(201, 201, 201, 1) 0%, rgba(222, 160, 160, 1) 50%, rgba(224, 112, 112, 1) 100%);
+}
+
+.termek {
+	color: #000000;
+    min-height: 70vh;
+    padding: clamp(2rem, 5vw, 5rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.robot_ht {
+	background: #c9c9c9;
+	background: linear-gradient(45deg,rgba(201, 201, 201, 1) 0%, rgba(209, 222, 232, 1) 50%, rgba(160, 196, 222, 1) 100%);
+}
+
+.epi360_ht {
+	background: #b5ff78;
+	background: linear-gradient(45deg,rgba(201, 201, 201, 1) 0%, rgba(209, 222, 232, 1) 50%, rgba(160, 196, 222, 1) 100%);
+}
+
+.epiturbo_ht {
+	background: #474747;
+	background: linear-gradient(45deg,rgba(71, 71, 71, 1) 0%, rgba(138, 148, 158, 1) 50%, rgba(255, 255, 255, 1) 100%);
+}
+
+.helyorzo_ht {
+	background: #FF0000;
+	background: linear-gradient(45deg,rgba(255, 0, 0, 1) 0%, rgba(0, 255, 0, 1) 50%, rgba(0, 0, 255, 1) 100%);
+}
+
+.btn {
+	border-radius: 10px;
+}
+
+.termek_alcim {
+	color: #000000;
+}
+
+.kep {
+    max-width: 544px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/**/
+/* Lábléccel kapcsolatos */
+.osszehozo {
+	margin-top: -30px;
+	border: 2px black solid;
+	width: 100%;
+}
+/**/
