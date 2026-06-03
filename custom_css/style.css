@@ -1,5 +1,5 @@
 * {
- //   outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 /**/
 
@@ -21,17 +21,22 @@ nav {
 	top: 0;
 }
 
+.navbar-collapse {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
 .fejlec {
-	background-color: rgba(255,255,255,0.08);
+    background-color: rgba(255,255,255,0.08);
 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
 /**/
 
-/* Aloldalakkal kapcsolatos */
-.hero-img {
-
+/* Termékekkel kapcsolatos */
+.margo {
+    margin-top: 8vh;
 }
 
 @keyframes megjelen_kep {
@@ -49,22 +54,22 @@ nav {
 }
 
 .megjelen_kep {
-	width: 100%;
-	max-width: 544px;
-	height: auto;
+    width: 100%;
+    max-width: 544px;
+    height: auto;
     max-height: 390vh;
     object-fit: contain;
-	display: block;
-	margin-inline: auto;
-	transform: translateX(-2vh);
-	margin-top: clamp(2vh, auto);
+    display: block;
+    margin-inline: auto;
+    transform: translateX(-2vh);
+    margin-top: clamp(2vh, auto);
     opacity: 0;
     transform: translateX(-80px);
     animation: megjelen_kep 1s ease-out forwards;
 }
 
 .eltolo {
-	padding-bottom: 20vh;
+	padding: 30vh 0 30vh 0;
 }
 
 .elvalaszto {
@@ -75,6 +80,7 @@ nav {
 	float: right;
 	margin-right: 100px;
 }
+
 
 .termek_szoveg p,
 .termek_szoveg h1{
@@ -90,16 +96,37 @@ nav {
 	background: linear-gradient(45deg,rgba(201, 201, 201, 1) 0%, rgba(222, 160, 160, 1) 50%, rgba(224, 112, 112, 1) 100%);
 }
 
-.termek {
-	color: #000000;
-    min-height: 70vh;
-    padding: clamp(2rem, 5vw, 5rem);
+.szegely {
+    border-radius: 0 100px 100px 0;
+}
 
+.mega_container {
+    padding-right: 8vw;
+}
+
+.mega_termek {
+    color: #000000;
+    min-height: 80vh;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(2rem, 4vw, 5rem);
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.termek {
+    color: #000000;
+    min-height: clamp(2rem, 35vh, 700px);
+    padding: clamp(1.5rem, 3vw, 3rem);
+
     justify-content: space-between;
 }
-.robot_ht {
+.epiclean_ht {
 	background: #c9c9c9;
 	background: linear-gradient(45deg,rgba(201, 201, 201, 1) 0%, rgba(209, 222, 232, 1) 50%, rgba(160, 196, 222, 1) 100%);
 }
@@ -114,6 +141,11 @@ nav {
 	background: linear-gradient(45deg,rgba(71, 71, 71, 1) 0%, rgba(138, 148, 158, 1) 50%, rgba(255, 255, 255, 1) 100%);
 }
 
+.epiview_ht {
+    background: #000000;
+    background: linear-gradient(45deg,rgba(0, 0, 0, 1) 0%, rgba(176, 176, 176, 1) 48%, rgba(201, 201, 201, 1) 100%);
+}
+
 .helyorzo_ht {
 	background: #FF0000;
 	background: linear-gradient(45deg,rgba(255, 0, 0, 1) 0%, rgba(0, 255, 0, 1) 50%, rgba(0, 0, 255, 1) 100%);
@@ -125,21 +157,18 @@ nav {
 
 .termek_alcim {
 	color: #000000;
+	min-height: 4rem;
 }
 
 .kep {
-    max-width: 544px;
-    width: 100%;
+    max-width: 100%;
+    max-height: 350px;
+    width: auto;
     height: auto;
-    display: block;
-    margin: auto;
+    object-fit: contain;
 }
 
 /**/
 /* Lábléccel kapcsolatos */
-.osszehozo {
-	margin-top: -30px;
-	border: 2px black solid;
-	width: 100%;
-}
+
 /**/
