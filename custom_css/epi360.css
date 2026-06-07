@@ -1,7 +1,11 @@
 body {
     margin: 0;
-	background: #000000;
-	background: linear-gradient(45deg,rgba(0, 0, 0, 1) 0%, rgba(199, 190, 177, 1) 50%, rgba(201, 201, 201, 1) 100%);
+    background: #CBC8C3;
+    background: linear-gradient(45deg,rgba(203, 200, 195, 1) 0%, rgba(139, 138, 133, 1) 50%, rgba(27, 27, 27, 1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+section {
+    padding: 6rem 1rem;
 }
